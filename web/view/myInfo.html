@@ -1,0 +1,13 @@
+<p><b>Name:</b> {{me.name}}</p>
+<p><b>Surname:</b> {{me.surname}}</p>
+<p><b>Job Title:</b> {{me.title | uppercase}}</p>
+<p><button ng-click="incLike()">Like</button> {{me.likes | currency: "$": "2"}}</p>
+
+
+<br>
+<label>Change name:</label>
+<input ng-model="me.name">
+
+<br>
+<welcome-message></welcome-message>
+<div other-message></div>
